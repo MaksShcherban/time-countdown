@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Countdown</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="main-text">Countdown</h3>
+      <div class="do-time">
+        <div class="lab">Enter a date and time for date:</div>
+        <input
+          id="party"
+          type="datetime-local"
+          name="partydate"
+          value="2024-08-17T08:30"
+        />
+      </div>
+      <div id="res"></div>
+      <div class="all-time">
+        <div class="time">
+          <div hidden id="day"></div>
+          days
+        </div>
+        <div class="time">
+          <div hidden id="hour"></div>
+          <div class="type">hours</div>
+        </div>
+        <div class="time">
+          <div hidden id="minute"></div>
+          <div class="type">minutes</div>
+        </div>
+        <div class="time">
+          <div hidden id="second"></div>
+          <div class="type">seconds</div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
